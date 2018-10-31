@@ -183,7 +183,7 @@ Click OK. A browser with a figure similar to [Figure 15](#f15:f15) should appear
 
 <figure>
 	<a id="fig:f15"></a>
-	<img style="width:75%;" src="figures/f14.png" alt="">
+	<img style="width:75%;" src="figures/f15.png" alt="">
 	<figcaption>Figure 15: Models visited in BeastModelTest. Those in blue circles correspond to the 95% credible set of models, with their size proportional to their posterior probability. Those in red are outside the credible set, and those with no circles have less than 0.43 posterior support. </figcaption>
 </figure>
 
