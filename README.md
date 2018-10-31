@@ -135,7 +135,7 @@ Select the *Trace* tab. This shows how the MCMC has sampled in parameter space.
 
 An other diagnostic of MCMC sampling is the effective sample size, shown in Tracer as ESS. This is the estimated number of independent samples obtained. A rule of thumb is to ensure that ESS is at least 200 for all parameters.
 
-Select the TreeHeight and rate.mean parameters (you might need to use the command or control key to select them at the same time), then select the *Joint-marginal* tab. TreeHeight is the age of the root of the tree, while rate.mean is the mean substitution rate in the model. If these parameters were independent, we would expect them to form a cloud along the x and y axes. However, these two parameters are naturally correlated. In particular, high rates typically lead to more recent timescales for the root, while lower rates lead to older root ages (Fig 10).
+Select the TreeHeight and rate.mean parameters (you might need to use the command or control key to select them at the same time), then select the *Joint-marginal* tab. TreeHeight is the age of the root of the tree, while rate.mean is the mean substitution rate in the model. If these parameters were independent, we would expect them to form a cloud along the x and y axes. However, these two parameters are naturally correlated. In particular, high rates typically lead to more recent timescales for the root, while lower rates lead to older root ages [Figure 10](#fig10:f10).
 
 <figure>
 	<a id="fig:f10"></a>
@@ -143,6 +143,49 @@ Select the TreeHeight and rate.mean parameters (you might need to use the comman
 	<figcaption>Figure 10: Joint marginal plot of TreeHeight and rate.mean. </figcaption>
 </figure>
 
+Check rate.coefficientOfVariation parameter [Figure 11](#fig11:f11). This is the standard deviation of branch rates divided by the mean rate. Typically, if this parameter is abutting zero, the data have low rate variation, such that they can follow a strict clock.
+
+**Question:** Does this data set appear to follow a strict clock, or does it display substantial rate variation among lineages?
+
+<figure>
+	<a id="fig:f11"></a>
+	<img style="width:75%;" src="figures/f11.png" alt="">
+	<figcaption>Figure 11: Posterior density of coefficient of rate variation. </figcaption>
+</figure>
+
+**Question:** When did these h1n1 samples last share a common ancestor? Is it consistent with our knowledge of the 2009 pandemic?
+
+Select the BMT_ModelIndicator trace. These are the models that were sampled using an index as shown in [Figure 12](#f12:f12).
+
+<figure>
+	<a id="fig:f12"></a>
+	<img style="width:75%;" src="figures/t1.png" alt="">
+	<figcaption>Figure 12: Index of models in BeastModelTest (from the bModelTest tutorial by Ramussen et al.). </figcaption>
+</figure>
+
+**Optional exercise:** The BEAST2 app BModelAnalyser provides a visual inspection of substitution model averaging. To use it, open the BEAST2 folder and find the AppLauncher icon. Click it to obtain a list of BEAST2 apps ([Figure 13](#f13:f13)).
+
+<figure>
+	<a id="fig:f13"></a>
+	<img style="width:75%;" src="figures/f13.png" alt="">
+	<figcaption>Figure 13: AppLauncher for BEAST2. </figcaption>
+</figure>
+
+Select BModelAnalyser and click Launch. A window will pop up with a few options. Click on browse and find the log file for the h1n1 data and set the remaining options as shown in [Figure 14](#f14:f14).
+
+<figure>
+	<a id="fig:f14"></a>
+	<img style="width:75%;" src="figures/f14.png" alt="">
+	<figcaption>Figure 14: Options for BModelAnalyser. </figcaption>
+</figure>
+
+Click OK. A browser with a figure similar to [Figure 15](#f15:f15) should appear in your default browser.
+
+<figure>
+	<a id="fig:f15"></a>
+	<img style="width:75%;" src="figures/f14.png" alt="">
+	<figcaption>Figure 15: Models visited in BeastModelTest. Those in blue circles correspond to the 95% credible set of models, with their size proportional to their posterior probability. Those in red are outside the credible set, and those with no circles have less than 0.43 posterior support. </figcaption>
+</figure>
 
 
 ############ Up to here
