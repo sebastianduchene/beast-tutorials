@@ -187,188 +187,41 @@ Click OK. A browser with a figure similar to [Figure 15](#f15:f15) should appear
 	<figcaption>Figure 15: Models visited in BeastModelTest. Those in blue circles correspond to the 95% credible set of models, with their size proportional to their posterior probability. Those in red are outside the credible set, and those with no circles have less than 0.43 posterior support. </figcaption>
 </figure>
 
+Question: Which model has the highest posterior probability? Does this model include among site rate heterogeneity? (hint: check the hasGammaRates and hasInvariableSites traces)
 
-############ Up to here
-
-## This is a subsection
-Quisque a dictum erat. Curabitur congue sapien sit amet pharetra pretium. Proin posuere euismod velit, eget faucibus ex varius id. Fusce sodales maximus malesuada. Mauris auctor dui in justo interdum egestas. Cras dapibus commodo nulla vitae congue. Vestibulum sit amet justo sit amet ex pretium bibendum. Donec ac mollis lorem, vel semper enim. Suspendisse sit amet auctor dui. Nullam ac efficitur mauris. Proin aliquam tincidunt felis nec semper. Vestibulum vestibulum, eros sit amet consectetur blandit, elit dolor posuere sem, a porta purus odio sit amet quam. Quisque dapibus erat sem, at vulputate libero dapibus sit amet. Mauris rhoncus odio nisl, nec interdum lacus consequat nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-
-Etiam tincidunt porttitor rutrum. Nulla facilisi. Mauris vehicula, justo ac ultricies tempus, quam erat hendrerit dui, vel pharetra sapien nibh vel ex. Sed molestie eu dui in laoreet. Pellentesque ultrices, orci vitae lacinia suscipit, erat sapien elementum ligula, sit amet viverra ante lorem eget elit. Cras euismod felis libero, pharetra lobortis arcu congue vehicula. Nullam posuere dapibus mauris, eget vulputate ligula auctor eget. Aenean et tempus est. Aliquam vehicula arcu vitae metus dictum viverra. Aliquam vitae purus mauris. Nullam interdum mauris eget sagittis consequat. Quisque in orci elementum, eleifend tortor eget, bibendum orci. Etiam aliquet dolor non neque semper fermentum. Praesent vitae venenatis mi, ut faucibus ligula. Phasellus vitae lorem neque. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-
-### This is a sub-subsection
-Etiam posuere urna ut condimentum sagittis. Suspendisse posuere, ex nec eleifend fringilla, nisl augue posuere augue, elementum mollis justo felis sed purus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris efficitur eros ut turpis elementum vestibulum. Sed sit amet nisi at nunc luctus laoreet id ac enim. Aliquam elementum risus id urna dictum fringilla. Aenean lobortis, risus euismod molestie pulvinar, massa odio pharetra nulla, vitae facilisis neque magna sed lorem. Praesent ipsum enim, commodo ut pharetra in, sollicitudin ac massa. Donec et interdum mauris. Ut molestie, risus quis fermentum placerat, diam risus posuere nisi, eget viverra tortor neque ac sem. Donec viverra magna non dolor aliquam, in suscipit massa facilisis. Suspendisse congue arcu sed risus consectetur commodo. Aenean metus odio, volutpat at tincidunt id, ullamcorper in dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras ut sem in odio sodales iaculis non quis neque.
-
-Quisque non mollis massa, nec eleifend dolor. Proin porta elit metus, a lobortis enim venenatis ac. Nam scelerisque consectetur mi et gravida. Vestibulum placerat, est vitae euismod finibus, purus nisl viverra quam, eget condimentum mauris magna vel nisl. Phasellus pretium vitae diam in volutpat. Cras gravida non quam ut consectetur. Vivamus congue vulputate lorem.
-
-## This is another subsection
-Praesent sodales est in tempor commodo. Suspendisse nulla metus, gravida eget malesuada vel, viverra eu felis. In vitae leo facilisis, ornare nunc nec, tempor tortor. Duis pretium mi eros, at consequat neque tincidunt eget. Mauris vestibulum venenatis arcu, eget lacinia arcu faucibus ut. Phasellus aliquam dui ipsum, a eleifend lacus fermentum at. Suspendisse congue orci quis ante consequat ornare. Integer a massa blandit, vestibulum eros ut, pulvinar augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-
-Quisque a urna a massa congue rhoncus. Donec bibendum tempus velit. Nam varius augue sit amet lacinia hendrerit. Proin tincidunt massa ut mi vestibulum placerat. Phasellus eget dui molestie, aliquet libero efficitur, vehicula ex. Pellentesque ultricies ante leo, eu lobortis odio convallis id. Donec vitae risus dui. Nulla orci velit, ultricies sed finibus quis, blandit quis arcu. Morbi non neque non odio rutrum condimentum. Vivamus libero metus, vehicula vitae elit ac, tincidunt pretium dui. Proin condimentum fringilla diam, blandit blandit nisl dapibus vel. Proin ante felis, accumsan eget ligula et, lobortis dictum nunc. Mauris a ante dignissim ipsum tincidunt tristique.
-
--------
-
-# Tutorial style guide
-
-## Text styling
-
-This is how to write _italic text_.
-
-This is how to write **bold text**.
-
-This is how to write **_bold and italic text_**.
-
-Do text superscripts like this 7^th, x^2y or  x^(2y + 3z).
-
-
-## Lists
-
-### Unnumbered lists
-
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-- Integer pharetra arcu ut nisl mollis ultricies.
-	- Fusce nec tortor at enim cursus dictum.
-	- Phasellus nec urna quis velit eleifend convallis sodales nec augue.
-- In iaculis turpis in massa facilisis, quis ultricies nibh ultricies.
-- Nam vitae turpis eu lacus imperdiet mollis id at augue.
-- Sed sed turpis ac dolor mollis accumsan.
-
-
-### Numbered lists
-
-1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-2. Integer pharetra arcu ut nisl mollis ultricies.
-	1. Fusce nec tortor at enim cursus dictum.
-	2. Phasellus nec urna quis velit eleifend convallis sodales nec augue.
-1. In iaculis turpis in massa facilisis, quis ultricies nibh ultricies.
-1. Nam vitae turpis eu lacus imperdiet mollis id at augue.
-1. Sed sed turpis ac dolor mollis accumsan.
-
-### Mixed lists
-
-1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-2. Integer pharetra arcu ut nisl mollis ultricies.
-	* Fusce nec tortor at enim cursus dictum.
-	* Phasellus nec urna quis velit eleifend convallis sodales nec augue.
-1. In iaculis turpis in massa facilisis, quis ultricies nibh ultricies.
-1. Nam vitae turpis eu lacus imperdiet mollis id at augue.
-1. Sed sed turpis ac dolor mollis accumsan.
-
-
-## Figures
-
+The .trees file contains trees sampled from the posterior. We can summarise them by using TreeAnnotator, which is distributed with the BEAST package. Double-click the TreeAnnotator icon. The window in [Figure 16](#f16:f16) will appear.
 
 <figure>
-	<a id="fig:example1"></a>
-	<img style="width:25%;" src="figures/Logo_bw.png" alt="">
-	<figcaption>Figure 1: This figure is 25% of the page width.</figcaption>
+	<a id="fig:f16"></a>
+	<img style="width:75%;" src="figures/f16.png" alt="">
+	<figcaption>Figure 16: TreeAnnotator input window. </figcaption>
 </figure>
 
 
+Type 10 for Burnin percentage and choose the same settings for Target tree type and node heights as shown in [Figure 16](#f16:f16). In Input Tree File click on Choose File..., and select h1n1_ucld.trees. In Output File click on Choose File... and type h1n1_ucld.tre. Note that we use the .tre extension for the output file. Click on Run.
+After the program has run, find the h1n1_ucld.tre and open it in [icytree](icytree.org). Click on *Style*, *Node-height error bars*, and select height_95%-HPD ([Figure 17](#f17:f17)).
+
 <figure>
-	<a id="fig:example2"></a>
-	<img style="width:10%;" src="figures/Logo_bw.png" alt="">
-	<figcaption>Figure 2: This figure is only 10% of the page width.</figcaption>
+	<a id="fig:f17"></a>
+	<img style="width:75%;" src="figures/f17.png" alt="">
+	<figcaption>Figure 17: Tree visualised in icytree with 95% HPD intervals for node heights shown in grey. </figcaption>
+</figure>
+
+Tick the Node Labels box and select Display: node ages. Tick the Node Bars box and select Display: height 95% HPD (Fig 15). Tick the Scale Axis box and tick Reverse Axis. The axis now represents time before the most recently collected sample, which is November 2009.
+
+
+Optional exercise 1: Use the BEAUTI window, which we left open, to sample from the prior distribution. This is useful to assess whether the data are informative about parameters of interest. To do this, go to the MCMC tab and tick the SampleFromPrior box. Change the names of the output log and trees files to h1n1_ucld_prior.log and h1n1_ucld_prior.trees and go to File, Save as, and save it as h1n1_UCLD_prior.xml. This analysis will run much faster because it does not need to calculate the phylogenetic likelihood. After it has run, load the log file with that from the posterior.
+Question: Does it seem like our data are driving our estimates of evolutionary rates and timescales (hint: compare the prior and the posterior for the tree height, as in [Figure 18](#f18:f18), and for the rate.mean parameters).
+
+<figure>
+	<a id="fig:f17"></a>
+	<img style="width:75%;" src="figures/f17.png" alt="">
+	<figcaption>Figure 18: Comparing the prior and posterior for the tree height. </figcaption>
 </figure>
 
 
+Optional exercise 2: Use the BEAUTI window, which we left open, to set up a strict clock. To do this go to the Clock Model tab and select Strict Clock. In the MCMC tab change the output file names to h1n1_sc.log, h1n1_sc.trees. Save it as h1n1_sc.xml and run it in BEAST. Compare the rate and node age estimates to those from the relaxed clock used here.
 
-# Code
-
-A bit of inline monospaced font can be made `like this`. Larger code blocks can be made by using the code environment:
-
-Java:
-
-```java
-public class HelloWorld {
-
-    public static void main(String[] args) {
-        // Prints "Hello, World" to the terminal window.
-        System.out.println("Hello, World");
-    }
-
-}
-```
-
-XML:
-
-```xml
-	<BirthDeathSkylineModel spec="BirthDeathSkylineModel" id="birthDeath" tree="@tree" contemp="true">
-	      <parameter name="origin" id="origin" value ="100" lower="0."/>    
-	      <parameter name="R0" id="R0" value="2" lower="0." dimension ="10"/>
-	      <parameter name="becomeUninfectiousRate" id="becomeUninfectiousRate" value="1" lower="0." dimension ="10"/>
-	      <parameter name="samplingProportion" id="samplingProportion" value="0."/>
-	      <parameter name="rho" id="rho" value="1e-6" lower="0." upper="1."/>
-	</BirthDeathSkylineModel>
-```
-
-R:
-
-```R
-	> myString <- "Hello, World!"
-	> print (myString)
-	[1] "Hello, World!"
-```
-
-# Equations
-
-Inline equations: {% eqinline \dot{x} = \sigma(y-x) %}
-
-Displayed equations:
-{% eq \left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right) %}
-
-
-
-## Instruction boxes
-
-Use block-quotes for step-by-step instruction that the user should perform (this will produce a framed box on the website):
-
-> The data we have is not the data we want, and the data we need is not the data we have.
->
-> We can input **any** formatted text in here:
->
-> - Even
-> - Lists
->
-> or equations:
->
-> {% eq (x_1, \ldots, x_n) \left( \begin{array}{ccc}
-      \phi(e_1, e_1) & \cdots & \phi(e_1, e_n) \\
-      \vdots & \ddots & \vdots \\
-      \phi(e_n, e_1) & \cdots & \phi(e_n, e_n)
-    \end{array} \right)
-  \left( \begin{array}{c}
-      y_1 \\
-      \vdots \\
-      y_n
-    \end{array} \right) %}
-
-
-
-
-
-
-# Hyperlinks
-
-Add links to figures like this:
-
-- [Figure 1](#fig:example1) is 25% of the page width.
-- [Figure 2](#fig:example2) is 10% of the page width.
-
-Add links to external URLs like [this](http://www.google.com).
-
-Links to equations or different sections within the same document are a little buggy.
-
-
-----
-
-# Useful Links
-
-- [Bayesian Evolutionary Analysis with BEAST 2](http://www.beast2.org/book.html) {% cite BEAST2book2014 --file Tutorial-Template/master-refs.bib %}
-- BEAST 2 website and documentation: [http://www.beast2.org/](http://www.beast2.org/)
-- BEAST 1 website and documentation: [http://beast.bio.ed.ac.uk](http://beast.bio.ed.ac.uk)
-- Join the BEAST user discussion: [http://groups.google.com/group/beast-users](http://groups.google.com/group/beast-users)
-
-----
 
 # Relevant References
 
