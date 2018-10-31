@@ -124,16 +124,24 @@ After letting BEAST run for about 30 minutes open Tracer [Figure 9](#fig9:f9), a
 
 <figure>
 	<a id="fig:f9"></a>
-	<img style="width:75%;" src="figures/f8.png" alt="">
+	<img style="width:75%;" src="figures/f9.png" alt="">
 	<figcaption>Figure 9: Tracer window. </figcaption>
 </figure>
 
 
-Select the *Trace*  tab. This shows how the MCMC has sampled in parameter space.
+Select the *Trace* tab. This shows how the MCMC has sampled in parameter space.
 
 **Question:** Inspect the trace for TreeHeight, and the clock model parameters (rate.mean and rate.variance). Does it appear that we have sufficient sampling from the stationary distribution? What do these parameters mean?
 
+An other diagnostic of MCMC sampling is the effective sample size, shown in Tracer as ESS. This is the estimated number of independent samples obtained. A rule of thumb is to ensure that ESS is at least 200 for all parameters.
 
+Select the TreeHeight and rate.mean parameters (you might need to use the command or control key to select them at the same time), then select the *Joint-marginal* tab. TreeHeight is the age of the root of the tree, while rate.mean is the mean substitution rate in the model. If these parameters were independent, we would expect them to form a cloud along the x and y axes. However, these two parameters are naturally correlated. In particular, high rates typically lead to more recent timescales for the root, while lower rates lead to older root ages (Fig 10).
+
+<figure>
+	<a id="fig:f10"></a>
+	<img style="width:75%;" src="figures/f10.png" alt="">
+	<figcaption>Figure 10: Joint marginal plot of TreeHeight and rate.mean. </figcaption>
+</figure>
 
 
 
