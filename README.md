@@ -214,8 +214,8 @@ Optional exercise 1: Use the BEAUTI window, which we left open, to sample from t
 Question: Does it seem like our data are driving our estimates of evolutionary rates and timescales (hint: compare the prior and the posterior for the tree height, as in [Figure 18](#f18:f18), and for the rate.mean parameters).
 
 <figure>
-	<a id="fig:f17"></a>
-	<img style="width:75%;" src="figures/f17.png" alt="">
+	<a id="fig:f18"></a>
+	<img style="width:75%;" src="figures/f18.png" alt="">
 	<figcaption>Figure 18: Comparing the prior and posterior for the tree height. </figcaption>
 </figure>
 
