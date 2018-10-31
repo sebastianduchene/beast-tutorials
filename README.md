@@ -54,6 +54,28 @@ BEAST2 requires the data and model specified in an xml format, which can be done
 </figure>
 
 
+Click on the Tip Dates tab and check the box Use tip dates [Figure 2](#fig2:f2).
+
+<figure>
+	<a id="fig:f2"></a>
+	<img style="width:75%;" src="figures/f2.png" alt="">
+	<figcaption>Figure 2: Tip dates enabled in BEAUTI.</figcaption>
+</figure>
+
+To use the tip dates as calibrations, click on the Auto-configure button. Check the first box (use everything) and in the dropdown menu, select after last, and type in a vertical line (|) as shown in Fig 2.
+
+The BEAUTI window should now display the dates for each of the sequences under the column date.
+
+Click on the Site Model tab. Instead of using a single substitution model, we will average over those that account for differences in the number of transitions to transversions. In the first drop-down menu select BEAST Model Test. There is a second drop-down menu to select the range of models that we will sample during the MCMC. Select transitionToTransversionSpit to limit our search to those that allow for differences in transitions to transversions. Click on the box Empirical to use the empirical base frequencies. These options should look like those in [Figure 3](#fig:f3).
+
+<figure>
+	<a id="fig:f3"></a>
+	<img style="width:75%;" src="figures/f2.png" alt="">
+	<figcaption>Figure 3: Substitution model set up in BEAUTI.</figcaption>
+</figure>
+
+
+
 ## This is a subsection
 Quisque a dictum erat. Curabitur congue sapien sit amet pharetra pretium. Proin posuere euismod velit, eget faucibus ex varius id. Fusce sodales maximus malesuada. Mauris auctor dui in justo interdum egestas. Cras dapibus commodo nulla vitae congue. Vestibulum sit amet justo sit amet ex pretium bibendum. Donec ac mollis lorem, vel semper enim. Suspendisse sit amet auctor dui. Nullam ac efficitur mauris. Proin aliquam tincidunt felis nec semper. Vestibulum vestibulum, eros sit amet consectetur blandit, elit dolor posuere sem, a porta purus odio sit amet quam. Quisque dapibus erat sem, at vulputate libero dapibus sit amet. Mauris rhoncus odio nisl, nec interdum lacus consequat nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
 
