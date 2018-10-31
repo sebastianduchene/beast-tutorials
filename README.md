@@ -66,15 +66,78 @@ To use the tip dates as calibrations, click on the Auto-configure button. Check 
 
 The BEAUTI window should now display the dates for each of the sequences under the column date.
 
-Click on the Site Model tab. Instead of using a single substitution model, we will average over those that account for differences in the number of transitions to transversions. In the first drop-down menu select BEAST Model Test. There is a second drop-down menu to select the range of models that we will sample during the MCMC. Select transitionToTransversionSpit to limit our search to those that allow for differences in transitions to transversions. Click on the box Empirical to use the empirical base frequencies. These options should look like those in [Figure 3](#fig:f3).
+Click on the *Site Model* tab. Instead of using a single substitution model, we will average over those that account for differences in the number of transitions to transversions. In the first drop-down menu select *BEAST Model Test*. There is a second drop-down menu to select the range of models that we will sample during the MCMC. Select transitionToTransversionSpit to limit our search to those that allow for differences in transitions to transversions. Click on the box Empirical to use the empirical base frequencies. These options should look like those in [Figure 3](#fig:f3).
 
 <figure>
 	<a id="fig:f3"></a>
-	<img style="width:75%;" src="figures/f2.png" alt="">
+	<img style="width:75%;" src="figures/f3.png" alt="">
 	<figcaption>Figure 3: Substitution model set up in BEAUTI.</figcaption>
 </figure>
 
+Click on the Clock Model tab. In the dropdown menu, select Relaxed Clock Lognormal [Figure 4](#fig:f4). The other default options are fine.
 
+<figure>
+	<a id="fig:f4"></a>
+	<img style="width:75%;" src="figures/f4.png" alt="">
+	<figcaption>Figure 4: Molecular clock model set up in BEAUTI.</figcaption>
+</figure>
+
+Click on the *Priors* tab. Select the Coalescent Exponential Population model [Figure 5](#fig5:f5). Most of the remaining priors are fine for our analyses, but it is a good exercise to inspect these distributions. In particular, set a Uniform distribution for the mean of the lognormal distribution for the rate with lower and upper bounds of 0 and 1, respectively. This is based on our knowledge that flu probably does not evolve at a rate that is faster than 1 subs/site/year.
+
+<figure>
+	<a id="fig:f5"></a>
+	<img style="width:75%;" src="figures/f5.png" alt="">
+	<figcaption>Figure 5: Priors tab in BEAUTI with the Coalescent Exponential Population prior. </figcaption>
+</figure>
+
+
+Click on the MCMC tab. Here, we can select different options for the MCMC. The chain length should be 20000000. Click on tracelog and treelog to specify the BEAST output, which is a set of trees and parameters values, sampled from the posterior. Ensure that the Log Every box is 2000 for the trees and log files. Name the log and tree files h1n1_UCLD.log and h1n1_UCLD.trees, respectively [Figure 6](#fig6:f6). We use the extension *_ucld* to refer to the uncorrelated lognormal clock model.
+
+
+<figure>
+	<a id="fig:f6"></a>
+	<img style="width:75%;" src="figures/f6.png" alt="">
+	<figcaption>Figure 6: MCMC set up in BEAST. </figcaption>
+</figure>
+
+Our BEAST input file is ready. To save it, click on File, Save, and name it h1n1_ucld.xml. Do not close BEAUTI.
+
+To run BEAST, double-click on the BEAST2 icon. A window with some options will appear [Figure 7](#fig7:f7).
+
+<figure>
+	<a id="fig:f7"></a>
+	<img style="width:75%;" src="figures/f7.png" alt="">
+	<figcaption>Figure 7: BEAST starting window. </figcaption>
+</figure>
+
+Click on Choose File... and select the xml file that we created in BEAUTI. Click Run. The MCMC will start running [Figure 8](#fig8:f8).
+
+<figure>
+	<a id="fig:f8"></a>
+	<img style="width:75%;" src="figures/f8.png" alt="">
+	<figcaption>Figure 8: BEAST MCMC sampling. </figcaption>
+</figure>
+
+Note that two files have been created in the folder where we saved the xml file, these are the .trees and .log files. This analysis can take up to two hours to complete, but we can inspect the log file much earlier.
+
+After letting BEAST run for about 30 minutes open Tracer [Figure 9](#fig9:f9), and drag the h1n1_UCLD.log file to the right pane of the Tracer window.
+
+<figure>
+	<a id="fig:f9"></a>
+	<img style="width:75%;" src="figures/f8.png" alt="">
+	<figcaption>Figure 9: Tracer window. </figcaption>
+</figure>
+
+
+Select the *Trace*  tab. This shows how the MCMC has sampled in parameter space.
+
+**Question:** Inspect the trace for TreeHeight, and the clock model parameters (rate.mean and rate.variance). Does it appear that we have sufficient sampling from the stationary distribution? What do these parameters mean?
+
+
+
+
+
+############ Up to here
 
 ## This is a subsection
 Quisque a dictum erat. Curabitur congue sapien sit amet pharetra pretium. Proin posuere euismod velit, eget faucibus ex varius id. Fusce sodales maximus malesuada. Mauris auctor dui in justo interdum egestas. Cras dapibus commodo nulla vitae congue. Vestibulum sit amet justo sit amet ex pretium bibendum. Donec ac mollis lorem, vel semper enim. Suspendisse sit amet auctor dui. Nullam ac efficitur mauris. Proin aliquam tincidunt felis nec semper. Vestibulum vestibulum, eros sit amet consectetur blandit, elit dolor posuere sem, a porta purus odio sit amet quam. Quisque dapibus erat sem, at vulputate libero dapibus sit amet. Mauris rhoncus odio nisl, nec interdum lacus consequat nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
