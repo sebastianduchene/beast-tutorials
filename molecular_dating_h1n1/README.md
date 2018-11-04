@@ -4,22 +4,24 @@ level: Intermediate
 title: Molecular dating using heterochronous data and substitution model averaging
 subtitle: Estimating the time of origin of the 2009 H1N1 pandemic in North America
 beastversion: 2.5
+tracerversion: 1.7
 ---
+
 
 
 # Background
 
-In this tutorial we will analyse 100 full genome sequences from the 2009 H1N1 flu pandemic in North America. The sequences were collected from about February to November, such that their sampling times can be used for calibration. An important aspect of using sampling times for calibration is that the sampling time should capture a sufficient number of substitutions, i.e. the population should be measurably evolving {% CITE %}. One way to verify this is to compare the prior and posterior distribution of the tree height, which we will do here. We will also use a relaxed molecular clock and the bModel test add-on to average over substitution models. In the optional exercises we can compare the estimates from a strict molecular clock model. In a subsequent tutorial we will use the exponential coalescent and constant birth-death model to infer epidemiological parameters.
+In this tutorial we will analyse 100 full genome sequences from the 2009 H1N1 flu pandemic in North America. The sequences were collected from about February to November, such that their sampling times can be used for calibration. They were analysed by Hedge and Rambaut {% cite hedge2013real --file master-refs.bib %}. An important aspect of using sampling times for calibration is that the sampling time should capture a sufficient number of substitutions, i.e. the population should be measurably evolving {% cite drummond2003measurably --file master-refs.bib %}. One way to verify whether a population is measurably evolving is to compare the prior and posterior distribution of the tree height, which we will do here. We will also use a relaxed molecular clock and the bModel test add-on to average over substitution models {% cite bouckaert2017bmodeltest --file master-refs.bib %}. In the optional exercises we can compare the estimates from a relaxed molecular clock to those from a strict molecular clock model. In a subsequent tutorial we will use the exponential coalescent and constant birth-death model to infer epidemiological parameters.
 
 # Programs used in this Exercise
 
 ### BEAST2 - Bayesian Evolutionary Analysis Sampling Trees 2
 
-BEAST2 is a free software package for Bayesian evolutionary analysis of molecular sequences using MCMC and strictly oriented toward inference using rooted, time-measured phylogenetic trees {% cite Bouckaert2014 --file h1n1/master-refs.bib %}. This tutorial uses the BEAST2 version 2.5.
+BEAST2 is a free software package for Bayesian evolutionary analysis of molecular sequences using MCMC and strictly oriented toward inference using rooted, time-measured phylogenetic trees {% cite Bouckaert2014 --file master-refs.bib %}. This tutorial uses the BEAST2 version 2.5.
 
 ### bModelTest
 
-bModelTest {CITE} is used to average over substitution models during the MCMC. For installation instructions click [here](http://www.beast2.org/managing-packages/).
+bModelTest {% cite bouckaert2017bmodeltest --file master-refs.bib %} is used to average over substitution models during the MCMC. For installation instructions click [here](http://www.beast2.org/managing-packages/).
 
 ### BEAUti2 - Bayesian Evolutionary Analysis Utility
 
@@ -39,7 +41,7 @@ Tracer ([http://tree.bio.ed.ac.uk/software/tracer](http://tree.bio.ed.ac.uk/soft
 
 ### IcyTree
 
-IcyTree ([https://icytree.org](https://icytree.org)) is a browser-based phylogenetic tree viewer. It is intended for rapid visualisation of phylogenetic tree files. It can also render phylogenetic networks provided in extended Newick format. IcyTree is compatible with current versions of Mozilla Firefox and Google Chrome.
+IcyTree ([https://icytree.org](https://icytree.org)) is a browser-based phylogenetic tree viewer {% cite vaughan2017icytree --file master-refs.bib %}. It is intended for rapid visualisation of phylogenetic tree files. It can also render phylogenetic networks provided in extended Newick format. IcyTree is compatible with current versions of Mozilla Firefox and Google Chrome.
 
 ----
 
@@ -207,8 +209,6 @@ After the program has run, find the h1n1_ucld.tre and open it in [icytree](icytr
 	<figcaption>Figure 17: Tree visualised in icytree with 95% HPD intervals for node heights shown in grey. </figcaption>
 </figure>
 
-Tick the Node Labels box and select Display: node ages. Tick the Node Bars box and select Display: height 95% HPD (Fig 15). Tick the Scale Axis box and tick Reverse Axis. The axis now represents time before the most recently collected sample, which is November 2009.
-
 
 Optional exercise 1: Use the BEAUTI window, which we left open, to sample from the prior distribution. This is useful to assess whether the data are informative about parameters of interest. To do this, go to the MCMC tab and tick the SampleFromPrior box. Change the names of the output log and trees files to h1n1_ucld_prior.log and h1n1_ucld_prior.trees and go to File, Save as, and save it as h1n1_UCLD_prior.xml. This analysis will run much faster because it does not need to calculate the phylogenetic likelihood. After it has run, load the log file with that from the posterior.
 Question: Does it seem like our data are driving our estimates of evolutionary rates and timescales (hint: compare the prior and the posterior for the tree height, as in [Figure 18](#f18:f18), and for the rate.mean parameters).
@@ -225,4 +225,4 @@ Optional exercise 2: Use the BEAUTI window, which we left open, to set up a stri
 
 # Relevant References
 
-{% bibliography --cited --file Tutorial-Template/master-refs.bib %}
+{% bibliography --cited --file master-refs.bib %}
