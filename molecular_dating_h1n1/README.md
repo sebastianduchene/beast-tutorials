@@ -1,5 +1,5 @@
 ---
-author: Sebastian Duchene
+author: Sebastian Duchene, Tim Vaughan, Veronika Boskova
 level: Intermediate
 title: Molecular dating using heterochronous data and substitution model averaging
 subtitle: Estimating the time of origin of the 2009 H1N1 pandemic in North America
